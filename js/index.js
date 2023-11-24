@@ -25,3 +25,14 @@ colors.forEach((color) => {
   colorBox.style.backgroundColor = color;
   document.body.append(colorBox);
 });
+
+function renderColorBox(color) {
+  const colorBox = document.createElement("div");
+  colorBox.classList.add("color-box");
+  colorBox.style.backgroundColor = color;
+  document.body.append(colorBox);
+}
+
+colors.forEach((color) => {
+  renderColorBox(color);
+});
